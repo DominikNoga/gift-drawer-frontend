@@ -8,7 +8,7 @@ import { getAssignmentTabState } from './YourAssignmentTab.utils';
 import { useEffect, useState } from 'react';
 import { ASSIGNMENT_STATES } from './YourAssignmentTab.const';
 import LoadingSpinner from '@gd/shared/components/LoadingSpinner/LoadingSpinner';
-import type { WishlistItem } from '@gd/types/src/models/wish.model';
+import type { WishlistItem } from '@gd/types/models/wish.model';
 import { getParticipantWishlist } from '@gd/shared/services/wishes-services/wishes.service';
 import YourAssignmentWishes from './components/YourAssignmentWishes/YourAssignmentWishes';
 

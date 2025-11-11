@@ -1,16 +1,17 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import path from 'path';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
       '@styles': path.resolve(__dirname, 'src/styles'),
-      '@gd-components': path.resolve(__dirname, 'src/shared/components'),
-      '@gd-types': path.resolve(__dirname, 'src/shared/types'),
-      '@gd-constants': path.resolve(__dirname, 'src/shared/constants'),
-      '@gd-utils': path.resolve(__dirname, 'src/shared/utils'),
+      '@gd/shared': path.resolve(__dirname, 'src/shared'),
+      '@gd/types': path.resolve(__dirname, 'src/shared/types'),
     },
   },
   css: {

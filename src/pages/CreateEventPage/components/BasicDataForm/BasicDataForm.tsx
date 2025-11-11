@@ -1,6 +1,6 @@
 import './BasicDataForm.scss';
 import { useState, type FormEvent } from 'react';
-import type { CreateEventRequest } from '@gd/types/src/api/api.events.types';
+import type { CreateEventRequest } from '@gd/types/api/api.events.types';
 import Button from '@gd/shared/components/buttons/Button/Button';
 import Input from '@gd/shared/components/Input/Input';
 import { InterfaceIcons, UserIcons } from '@gd/shared/constants/icons';

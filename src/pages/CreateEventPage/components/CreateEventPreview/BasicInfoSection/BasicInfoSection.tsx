@@ -1,4 +1,4 @@
-import type { CreateEventRequest } from '@gd/types/src/api/api.events.types';
+import type { CreateEventRequest } from '@gd/types/api/api.events.types';
 import './BasicInfoSection.scss';
 import FormHeader from '../../ui/FormHeader/FormHeader';
 import EventPreviewSection from '../components/ui/EventPreviewSection/EventPreviewSection';

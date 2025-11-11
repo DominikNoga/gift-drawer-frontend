@@ -1,4 +1,4 @@
-import type { GetEventResponse } from "@gd/types/src/api/api.events.types";
+import type { GetEventResponse } from "@gd/types/api/api.events.types";
 import { createContext } from "react";
 
 export type EventPageContextType = {

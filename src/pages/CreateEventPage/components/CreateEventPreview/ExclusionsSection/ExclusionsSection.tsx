@@ -1,4 +1,4 @@
-import type { CreateExclusionFromEventRequest } from '@gd/types/src/models/exclusions.model';
+import type { CreateExclusionFromEventRequest } from '@gd/types/models/exclusions.model';
 import FormHeader from '../../ui/FormHeader/FormHeader';
 import EventPreviewSection from '../components/ui/EventPreviewSection/EventPreviewSection';
 import EventPreviewList from '../components/ui/EventPreviewList/EventPreviewList';

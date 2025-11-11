@@ -1,4 +1,4 @@
-import type { WishlistItem } from '@gd/types/src/models/wish.model';
+import type { WishlistItem } from '@gd/types/models/wish.model';
 import './YourAssignmentWishes.scss';
 import WishlistItems from '../../../WishlistTab/components/WishlistItems/WishlistItems';
 

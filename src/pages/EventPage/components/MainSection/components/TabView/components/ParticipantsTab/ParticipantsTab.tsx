@@ -1,4 +1,4 @@
-import type { ParticipantUI } from '@gd/types/src/models/participants.model';
+import type { ParticipantUI } from '@gd/types/models/participants.model';
 import ParticipantsTabItem from './components/ParticipantsTabItem/ParticipantTabItem';
 import './ParticipantsTab.scss';
 

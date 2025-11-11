@@ -1,7 +1,7 @@
 import { getCachedValue } from "../local-storage.service";
 import { USER_EVENTS } from "../../constants/local-storage-keys";
 import type { CachedEvent } from "../../types/events.types";
-import type { GetEventResponse } from "@gd/types/src/api/api.events.types";
+import type { GetEventResponse } from "@gd/types/api/api.events.types";
 
 export const cacheUserEvents = (event: GetEventResponse) => {
   const cachedEvents = getCachedValue<CachedEvent[]>(USER_EVENTS) || [];

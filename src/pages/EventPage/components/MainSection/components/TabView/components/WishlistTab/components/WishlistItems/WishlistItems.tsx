@@ -1,4 +1,4 @@
-import type { WishlistItem } from '@gd/types/src/models/wish.model';
+import type { WishlistItem } from '@gd/types/models/wish.model';
 import './WishlistItems.scss';
 import { ChristmasIcons, NavigationIcons } from '@gd/shared/constants/icons';
 import SquareIcon from '@gd/shared/components/icons/SquareIcon/SquareIcon';

@@ -2,7 +2,7 @@ import React, { useCallback, useContext, useEffect, useState } from "react";
 import { EventPageContext, type EventPageContextType } from "./EventPageContext";
 import { getEvent } from "@gd/shared/services/events-services/events.service";
 import { cacheUserEvents } from "@gd/shared/services/events-services/events.cache.service";
-import type { GetEventResponse } from "@gd/types/src/api/api.events.types";
+import type { GetEventResponse } from "@gd/types/api/api.events.types";
 
 type Props = {
   eventId: string;

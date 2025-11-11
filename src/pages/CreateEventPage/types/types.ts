@@ -1,5 +1,5 @@
-import type { CreateEventRequest } from "@gd/types/src/api/api.events.types";
-import type { CreateExclusionFromEventRequest } from "@gd/types/src/models/exclusions.model";
+import type { CreateEventRequest } from "@gd/types/api/api.events.types";
+import type { CreateExclusionFromEventRequest } from "@gd/types/models/exclusions.model";
 import type { FormEvent } from "react";
 
 export type CurrentStep = 0 | 1 | 2 | 3;

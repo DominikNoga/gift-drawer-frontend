@@ -1,5 +1,5 @@
-import { config as reactConfig } from '@gd/eslint-config/react-internal';
+import { config } from "./eslint/reactConfig";
 
 export default [
-  ...reactConfig,
+  ...config,
 ];

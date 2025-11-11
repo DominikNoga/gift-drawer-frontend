@@ -1,7 +1,7 @@
 
 import { get, post } from "@gd/shared/utils/api.utils";
-import type { CreateEventRequest, CreateEventResponse, EventIdResponse, GetEventResponse } from "@gd/types/src/api/api.events.types";
-import type { DrawAssignmentsRequest } from "@gd/types/src/api/api.participants.types";
+import type { CreateEventRequest, CreateEventResponse, EventIdResponse, GetEventResponse } from "@gd/types/api/api.events.types";
+import type { DrawAssignmentsRequest } from "@gd/types/api/api.participants.types";
 import axios from "axios";
 
 const API_URL = '/events';

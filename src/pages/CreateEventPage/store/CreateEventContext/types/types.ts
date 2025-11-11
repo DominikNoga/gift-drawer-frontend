@@ -1,7 +1,7 @@
-import type { CreateEventRequest } from "@gd/types/src/api/api.events.types";
+import type { CreateEventRequest } from "@gd/types/api/api.events.types";
 import type { CurrentStep } from "../../../types/types";
 import type { CREATE_EVENT_ACTIONS } from "../../../constants/constants";
-import type { CreateExclusionFromEventRequest } from "@gd/types/src/models/exclusions.model";
+import type { CreateExclusionFromEventRequest } from "@gd/types/models/exclusions.model";
 import type { FormEvent } from "react";
 
 export type CreateEventActionType = 'basic-info' | 'add-participants' | 'set-exclusions' | 'create-event';
