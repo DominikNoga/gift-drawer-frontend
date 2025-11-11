@@ -1,0 +1,18 @@
+.event-card {
+  @include flex-layout(column, center, center);
+  padding: $spacing-4;
+  &-title {
+    font-size: $font-size-xl;
+    @include reset-spacing();
+  }
+
+  .input-group {
+    width: 100%;
+  }
+  
+  &-description {
+    text-align: center;
+    color: $text-secondary;
+    @include reset-spacing();
+  }
+}

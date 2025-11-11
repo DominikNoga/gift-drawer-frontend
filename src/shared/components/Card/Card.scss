@@ -1,0 +1,13 @@
+.card {
+  @include card-style();
+}
+
+.card-large {
+  @extend .card;
+  padding: $card-padding-lg;
+}
+
+.card-small {
+  @extend .card;
+  padding: $card-padding-sm;
+}

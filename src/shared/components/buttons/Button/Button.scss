@@ -1,0 +1,61 @@
+.btn {
+  color: $text-white;
+  padding: $spacing-2 $spacing-4;
+  border: none;
+  border-radius: $border-radius-md;
+  position: relative;
+  &::before {
+    content: '';
+    box-shadow: $shadow-md;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: $border-radius-md;
+    background-color: black;
+    opacity: 0;
+    transition: $transition-opacity, $transition-shadow;
+  }
+
+  @include hover-effect() {
+    &::before {
+      box-shadow: $shadow-lg;
+      opacity: .1;
+    }
+  }
+}
+
+.btn-primary {
+  @extend .btn;
+  background-image: linear-gradient(to right, $red-500, $red-600);
+}
+
+.btn-secondary {
+  @extend .btn;
+  background-image: linear-gradient(to right, $green-500, $green-600);
+}
+
+.btn-tertiary {
+  @extend .btn;
+  background-image: linear-gradient(to right, $blue-500, $blue-600);
+
+  @include hover-effect() {
+    background-image: linear-gradient(to right, $blue-600, $blue-700);
+  }
+}
+
+.btn-transparent {
+  @extend .btn;
+  background-color: transparent;
+  color: $text-primary;
+  border: $gray-300 2px solid;
+
+  &::before {
+    background-color: $text-primary;
+  }
+
+  @include hover-effect() {
+    // background-color: $gray-100;
+  }
+}

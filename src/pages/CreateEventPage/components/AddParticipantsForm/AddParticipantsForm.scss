@@ -1,0 +1,8 @@
+.event-create-form-participants-count {
+  @include flex-layout(row, center);
+}
+
+.event-create-form-btn-confirm {
+  align-self: flex-end;
+  padding: $spacing-3 $spacing-4;
+}

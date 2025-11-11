@@ -1,0 +1,75 @@
+.my-events-card {
+  @include flex-layout(column, flex-start, flex-start);
+  transition: border-color $transition-base, $transition-shadow;
+
+  @include hover-effect() {
+    border: $border-width-1 solid $border-color-primary;
+    box-shadow: $shadow-lg;
+
+    .my-events-card-row {
+      h3, &-link-icon {
+        color: $primary;
+      }
+    }
+  }
+
+  &-row {
+    @include flex-layout(row, center, space-between);
+    width: 100%;
+
+    h3, &-link-icon {
+      transition: $transition-base color;
+    }
+
+    h3 {
+      @include reset-spacing();
+    }
+
+    &-link-icon {
+      @include square(1.375rem);
+      color: $text-secondary;
+    }
+  }
+
+  &-description {
+    @include text-less-important();
+  }
+
+  &-info {
+    @include flex-layout(column, $gap: .5rem);
+    color: $text-secondary;
+
+    &-item {
+      @include flex-layout(row, center, flex-start);
+    }
+
+    &-icon {
+      font-size: $font-size-base;
+    }
+
+    &-icon-green {
+      @extend .my-events-card-info-icon;
+      color: $green-600;
+    }
+
+    &-icon-blue {
+      @extend .my-events-card-info-icon;
+      color: $blue-600;
+    }
+
+    &-icon-purple {
+      @extend .my-events-card-info-icon;
+      color: $purple-600;
+    }
+  }
+
+  &-footer {
+    border-top: $border-width-1 solid $border-color-light;
+    width: 100%;
+    padding: $spacing-2 0;
+
+    span {
+      @include text-less-important();
+    }
+  }
+}

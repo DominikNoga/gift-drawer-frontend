@@ -1,0 +1,25 @@
+.event-cards-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: $spacing-8;
+  margin-bottom: $spacing-16;
+
+  .event-cards-create-icon {
+    background-color: $red-100;
+    color: $red-600;
+  }
+  .event-cards-join-icon {
+    background-color: $green-100;
+    color: $green-600;
+  }
+}
+
+.event-card-input {
+  width: 100%;
+}
+
+.event-card-btn {
+  width: 100%;
+  font-size: $font-size-lg;
+  padding: $spacing-4 $spacing-2 !important;
+}
