@@ -44,20 +44,20 @@ export default function Footer() {
               {/* <span className='footer-link' onClick={handleRequestFeatureClick}>Request a feature</span> */}
             </li>
             <li>
-              <span className='footer-link'>How it works?</span>
+              <a className='footer-link' href='#how-it-works'>How it works?</a>
             </li>
           </ul>
         </section>
-        <section className='footer-info-item'>
+        {/* <section className='footer-info-item'>
           <h3 className='footer-info-item-title'>Support</h3>
-          {/* <ButtonWithIcon className='footer-support-button' onClick={handleRequestFeatureClick} icon={<InterfaceIcons.Message />}>
+          <ButtonWithIcon className='footer-support-button' onClick={handleRequestFeatureClick} icon={<InterfaceIcons.Message />}>
             Request a feature
-          </ButtonWithIcon> */}
+          </ButtonWithIcon>
           <p>
             Have an idea to make Secret Santa even better? We&apos;d love to hear from you!
           </p>
-        </section>
-      </section>
+        </section>*/}
+      </section> 
       <section className='footer-copy'>
         <p className='footer-copy-text'>© 2025 Gift Drawer by Dominik Frankiewicz 🎁</p>
         <p className='footer-copy-stack'>

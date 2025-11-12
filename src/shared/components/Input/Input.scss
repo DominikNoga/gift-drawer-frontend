@@ -20,6 +20,7 @@
     padding: $input-padding;
     border-radius: $border-radius-sm;
     outline: none;
+    overflow: hidden;
     border: $border-color-medium 2px solid;
     transition: border-color $transition-base;
     z-index: 1;
