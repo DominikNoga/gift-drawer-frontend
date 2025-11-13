@@ -15,7 +15,7 @@ export default function ParticipantsTab({ participants }: Props) {
       {participants?.map((participant) => (
         <ParticipantsTabItem
           key={participant.name}
-          name={'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'}
+          name={participant.name}
           joinCode={participant.joinCode}
         />
       ))}
