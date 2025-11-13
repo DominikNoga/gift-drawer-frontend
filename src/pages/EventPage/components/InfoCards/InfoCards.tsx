@@ -4,6 +4,7 @@ import InfoCard from './components/InfoCard/InfoCard';
 import { colors } from '@gd/shared/constants/colors';
 import SquareIcon from '@gd/shared/components/icons/SquareIcon/SquareIcon';
 import { useEventPageContext } from '../../providers/EventPageContextProvider/EventPageContextProvider';
+import { formatDate } from '@gd/shared/utils/date.utils';
 
 const ICON_SIZE = 2.25;
 
@@ -33,7 +34,7 @@ export default function InfoCards() {
       />,
     },
     {
-      value: eventDate ?? 'To be decided',
+      value: formatDate(eventDate, true) ?? 'To be decided',
       label: 'Event Date',
       icon: <SquareIcon
         icon={<InterfaceIcons.Calendar />}
