@@ -1,11 +1,10 @@
 $progress-line-width: 26%;
 $progress-line-start: 85px;
-$resize-breakpoint: 730px;
 
 .create-event-steps {
   @include flex-layout(row, center, space-between, 0);
 
-  @media (max-width: $resize-breakpoint) {
+  @media (max-width: $create-event-page-breakpoint) {
     @include flex-layout(column, center, default, $spacing-6);
   }
 
@@ -19,7 +18,7 @@ $resize-breakpoint: 730px;
     @include rectangle($progress-line-width, 8px);
     background-color: $gray-300;
 
-    @media (max-width: $resize-breakpoint) {
+    @media (max-width: $create-event-page-breakpoint) {
       display: none;
     }
   }
@@ -53,7 +52,7 @@ $resize-breakpoint: 730px;
       }
     }
 
-    @media (max-width: $resize-breakpoint) {
+    @media (max-width: $create-event-page-breakpoint) {
       display: none;
 
       &.active {
